@@ -22,7 +22,7 @@ variable "bucket_name" {
 variable "bucket_location" {
   description = "Location of the bucket."
   type        = string
-  default     = "EUROPE-WEST1"
+  default     = "US-CENTRAL1"
 }
 variable "versioning_enabled" {
   description = "True if you want to version your bucket."

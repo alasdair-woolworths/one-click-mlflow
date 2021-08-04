@@ -22,7 +22,7 @@ variable "artifacts_bucket_name" {
 variable "artifacts_bucket_location" {
   description = "Location of the mlflow artifact bucket deployed"
   type        = string
-  default     = "EUROPE-WEST1"
+  default     = "US-CENTRAL1"
 }
 variable "artifacts_number_of_version" {
   description = "Number of file version kept in your artifacts bucket"
@@ -57,7 +57,7 @@ variable "db_version" {
 variable "db_region" {
   description = "Database region"
   type        = string
-  default     = "europe-west1"
+  default     = "us-central1"
 }
 variable "db_size" {
   description = "Database instance size"

@@ -1,0 +1,6 @@
+{
+  "TF_VAR_web_app_users": [],
+  "TF_VAR_project_id": "gcp-wow-food-ra-shout-dev",
+  "TF_VAR_project_number": "512000394897",
+  "TF_VAR_backend_bucket": "gcp-wow-food-ra-shout-dev-512000394897-ocmlf-state"
+}

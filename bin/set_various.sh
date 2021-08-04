@@ -3,7 +3,7 @@
 set -e
 
 PROJECT_ID=$(jq -r '.TF_VAR_project_id' ../vars.json)
-DOCKER_REPO="eu.gcr.io"
+DOCKER_REPO="us.gcr.io"
 DOCKER_NAME="mlflow"
 DOCKER_TAG="0.1"
 

@@ -3,7 +3,7 @@ touch vars_additionnal
 source vars_additionnal
 
 export TF_VAR_project_number=$(gcloud --format json projects describe $TF_VAR_project_id | jq '.["projectNumber"]' | tr -d '"')
-export DOCKER_REPO=eu.gcr.io
+export DOCKER_REPO=us.gcr.io
 export DOCKER_NAME=mlflow
 export DOCKER_TAG=0.1
 export TF_VAR_mlflow_docker_image=$DOCKER_REPO/$TF_VAR_project_id/$DOCKER_NAME:$DOCKER_TAG
