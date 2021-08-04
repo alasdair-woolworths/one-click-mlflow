@@ -18,7 +18,7 @@
 variable "location" {
   type        = string
   description = "Location to deploy your server"
-  default     = "europe-west"
+  default     = "us-central"
 }
 variable "docker_image_name" {
   type        = string

@@ -85,7 +85,7 @@ variable "mlflow_server" {
 variable "server_location" {
   description = "Location to deploy cloud run server"
   type        = string
-  default     = "europe-west"
+  default     = "us-central"
 }
 variable "server_docker_image" {
   description = "Docker image name of your mlflow server"
