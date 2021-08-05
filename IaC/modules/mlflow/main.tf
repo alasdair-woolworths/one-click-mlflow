@@ -62,6 +62,6 @@ module "server" {
   network_short_name           = var.network_short_name
   oauth_client_id              = var.oauth_client_id
   oauth_client_secret          = var.oauth_client_secret
-  create_brand                 = 1 #force create brand #var.create_brand 
-  brand_name                   = var.brand_name
+  create_brand                 = 0 #0 for don't create brand #var.create_brand 
+  brand_name                   = "CloudStreams" # var.brand_name
 }
