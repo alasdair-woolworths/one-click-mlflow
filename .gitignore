@@ -1,10 +1,10 @@
 #terraform
-.terraform
-*.tfstate
-*.tfstate.backup
-*.tfvars
-IaC/*/*.hcl
-IaC/*.hcl
+#.terraform
+#*.tfstate
+#*.tfstate.backup
+#*.tfvars
+#IaC/*/*.hcl
+#IaC/*.hcl
 
 #secrets
 secrets/
