@@ -1,4 +1,16 @@
-export TF_VAR_web_app_users=[]
+export TF_VAR_web_app_users='["domain:woolworths.com.au"]'
 export TF_VAR_project_id=gcp-wow-food-ra-shout-dev
 export TF_VAR_project_number=512000394897
 export TF_VAR_backend_bucket=gcp-wow-food-ra-shout-dev-512000394897-ocmlf-state
+export TF_VAR_create_default_service=0
+export DOCKER_REPO=us.gcr.io
+export DOCKER_NAME=mlflow
+export DOCKER_TAG=0.1
+export TF_VAR_mlflow_docker_image=us.gcr.io/gcp-wow-food-ra-shout-dev/mlflow:0.1
+export APP_EXISTS=1
+export TF_VAR_network_name=gcp-wow-vpc-us-rashout-dev-dataflow
+export TF_VAR_consent_screen_support_email=adouglas@woolworths.com.au
+export TF_VAR_brand_name=projects/512000394897/brands/512000394897
+export TF_VAR_create_brand=0
+export TF_VAR_oauth_client_id=
+export TF_VAR_oauth_client_secret=

@@ -1,6 +1,18 @@
 {
-  "TF_VAR_web_app_users": [],
+  "TF_VAR_web_app_users": "'[\"domain:woolworths.com.au\"]'",
   "TF_VAR_project_id": "gcp-wow-food-ra-shout-dev",
   "TF_VAR_project_number": "512000394897",
-  "TF_VAR_backend_bucket": "gcp-wow-food-ra-shout-dev-512000394897-ocmlf-state"
+  "TF_VAR_backend_bucket": "gcp-wow-food-ra-shout-dev-512000394897-ocmlf-state",
+  "TF_VAR_create_default_service": "0",
+  "DOCKER_REPO": "us.gcr.io",
+  "DOCKER_NAME": "mlflow",
+  "DOCKER_TAG": "0.1",
+  "TF_VAR_mlflow_docker_image": "us.gcr.io/gcp-wow-food-ra-shout-dev/mlflow:0.1",
+  "APP_EXISTS": "1",
+  "TF_VAR_network_name": "gcp-wow-vpc-us-rashout-dev-dataflow",
+  "TF_VAR_consent_screen_support_email": "adouglas@woolworths.com.au",
+  "TF_VAR_brand_name": "projects/512000394897/brands/512000394897",
+  "TF_VAR_create_brand": "0",
+  "TF_VAR_oauth_client_id": "",
+  "TF_VAR_oauth_client_secret": ""
 }
