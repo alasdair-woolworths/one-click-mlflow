@@ -143,8 +143,10 @@ resource "google_app_engine_flexible_app_version" "mlflow_app" {
     cpu       = 1
     memory_gb = 2
   }
+
   network {
     name = var.network_short_name
+    subnetwork = var.subnetwork_name # added because it is specified
   }
 
   beta_settings = {
@@ -176,15 +178,15 @@ resource "google_iap_brand" "project_brand" {
 
 resource "google_iap_client" "project_client" {
   count        = var.oauth_client_id == "" ? 1 : 0
-  display_name = "mlflow"
+  display_name = "mlflow" # this needs to match what is existing
   brand        = var.create_brand == 1 ? google_iap_brand.project_brand[0].name : var.brand_name
 }
 
-resource "google_iap_app_engine_service_iam_member" "member" {
-  for_each = toset(var.web_app_users)
-  project  = data.google_project.project.project_id
-  app_id   = data.google_project.project.project_id
-  service  = google_app_engine_flexible_app_version.mlflow_app.service
-  role     = "roles/iap.httpsResourceAccessor"
-  member   = each.key
-}
+#resource "google_iap_app_engine_service_iam_member" "member" {
+#  for_each = toset(var.web_app_users)
+#  project  = data.google_project.project.project_id
+#  app_id   = data.google_project.project.project_id
+#  service  = google_app_engine_flexible_app_version.mlflow_app.service
+#  role     = "roles/iap.httpsResourceAccessor"
+#  member   = each.key
+#}

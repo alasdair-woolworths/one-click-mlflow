@@ -43,7 +43,7 @@ else
 
   BRAND_EXISTS=0
 
-  ./save_var.sh TF_VAR_create_brand 0 #overrode this 
+  ./save_var.sh TF_VAR_create_brand 1 
   ./save_var.sh TF_VAR_oauth_client_id ""
   ./save_var.sh TF_VAR_oauth_client_secret ""
 fi

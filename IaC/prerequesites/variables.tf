@@ -36,7 +36,7 @@ variable "versioning_enabled" {
 variable "backend_bucket_number_of_version" {
   description = "Number of version you want to keep with the versionning."
   type        = number
-  default     = 3
+  default     = 10
 }
 variable "backend_bucket_storage_class" {
   description = "Storage class of your bucket"

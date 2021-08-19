@@ -21,6 +21,8 @@ A tool to deploy a mostly serverless MLflow on a GCP project with one command
 
 Clone the repo
 
+Run `gcloud auth application-default login` if running from a local environment to ensure the deafult login is used
+
 Run `make one-click-mlflow` and let the wizard guide you.
 
 If you want to see the innards, you can run it in debug mode: `DEBUG=true make one-click-mlflow`

@@ -85,7 +85,7 @@ variable "mlflow_server" {
 variable "server_location" {
   description = "Location to deploy cloud run server"
   type        = string
-  default     = "australia-southeast1"
+  default     = "us-central1"
 }
 variable "server_docker_image" {
   description = "Docker image name of your mlflow server"
@@ -116,6 +116,10 @@ variable "network_self_link" {
   type = string
 }
 variable "network_short_name" {}
+variable "subnetwork_name" {
+  type        = string
+  description = "Name of the subnetwork to attach to."
+}
 variable "oauth_client_id" {
   type        = string
   description = "Oauth client id, empty if consent screen not set up"

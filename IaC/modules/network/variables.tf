@@ -20,6 +20,11 @@ variable "network_name" {
   description = "Name of the network to attach to. If empty, a new network will be created"
 }
 
+variable "subnetwork_name" {
+  type        = string
+  description = "Name of the subnetwork to attach to."
+}
+
 variable "network_name_local" {
   type        = string
   description = "Name of the network to create if network_name does not exist already"

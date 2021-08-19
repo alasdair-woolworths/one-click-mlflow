@@ -18,7 +18,7 @@
 variable "location" {
   type        = string
   description = "Location to deploy your server"
-  default     = "australia-southeast1"
+  default     = "us-central1"
 }
 variable "docker_image_name" {
   type        = string
@@ -86,6 +86,10 @@ variable "mlflow_server" {
 }
 variable "network_short_name" {
   type = string
+}
+variable "subnetwork_name" {
+  type        = string
+  description = "Name of the subnetwork to attach to."
 }
 variable "max_appengine_instances" {
   description = "The maximum number of app engine instances to scale up to"

@@ -39,6 +39,7 @@ resource "random_id" "artifacts_bucket_name_suffix" {
 module "network" {
   source       = "./modules/network"
   network_name = var.network_name
+  subnetwork_name = var.subnetwork_name # added to propagate vars setting of subnetwork name in VPC
 }
 
 module "mlflow" {
@@ -51,6 +52,7 @@ module "mlflow" {
   web_app_users                = var.web_app_users
   network_self_link            = module.network.network_self_link
   network_short_name           = module.network.network_short_name
+  subnetwork_name              = var.subnetwork_name # added to propagate vars setting of subnetwork name in VPC
   create_default_service       = var.create_default_service == 1 ? true : false
   oauth_client_id              = var.oauth_client_id
   oauth_client_secret          = var.oauth_client_secret

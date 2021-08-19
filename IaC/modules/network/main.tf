@@ -18,7 +18,7 @@
 resource "google_compute_network" "private_network" {
   count                   = length(var.network_name) > 0 ? 0 : 1
   name                    = var.network_name_local
-  auto_create_subnetworks = true
+  auto_create_subnetworks = false # overrode. We are using specified subnetwork
 }
 
 resource "google_compute_firewall" "allow-internal" {
@@ -40,7 +40,7 @@ resource "google_compute_firewall" "allow-internal" {
 
   # Default internal range where our private network subnetworks are deployed.
   # c.f. https://www.terraform.io/docs/providers/google/r/compute_network.html#auto_create_subnetworks
-  source_ranges = ["10.128.0.0/9"]
+  source_ranges = ["192.168.1.0/24"] #changed to the exact range in the project #["10.128.0.0/9"]
 }
 
 resource "google_compute_global_address" "private_ip_addresses" {

@@ -40,6 +40,10 @@ variable "network_name" {
   type        = string
   description = "Name of the network to attach to. If empty, a new network will be created"
 }
+variable "subnetwork_name" {
+  type        = string
+  description = "Name of the subnetwork to attach to."
+}
 variable "storage_uniform" {
   type        = bool
   description = "Wether or not uniform level acces is to be activated for the buckets"
